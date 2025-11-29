@@ -1710,7 +1710,7 @@
 
         /* 居中分类栏 */
         .category-bar{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 10px;justify-content:center;align-items:center;}
-        .category-btn{background:#fff;border:1px solid #e6edf7;padding:8px 14px;border-radius:999px;color:#0b1730;cursor:pointer;transition:.18s;font-size:18px;box-shadow:0 1px 0 rgba(0,0,0,0.02)}
+        .category-btn{background:#fff;border:1px solid #e6edf7;padding:8px 14px;border-radius:999px;color:#0b1730;cursor:pointer;transition:.18s;font-size:17px;box-shadow:0 1px 0 rgba(0,0,0,0.02)}
         .category-btn.active{background:var(--primary);color:#fff;border-color:var(--primary);box-shadow:0 10px 30px rgba(15,98,254,0.12)}
 
         .cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;margin-top:12px}
@@ -1764,16 +1764,43 @@
               </div>
             </div>
 
+            <div class="ui segment mt-6" style="max-width: 900px; margin-left: auto; margin-right: auto;">
+              <h4 class="ui header">Citation Format in LaTeX</h4>
+              <div class="code-block" style="
+                background: #f5f5f5; 
+                padding: 1em; /* 内边距（上下左右留白） */
+                border-radius: 6px; 
+                overflow-x: auto; /* 横向滚动（代码太长时） */
+                overflow-y: auto; /* 纵向滚动（高度不够时） */
+                max-width: 100%; /* 最大宽度（不超过父容器） */
+                max-height: 250px; /* 最大高度（按需调整，超出滚动） */
+                font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+                font-size: 1.2em; /* 字体大小（按需调整） */
+                line-height: 1.4; /* 行高（优化可读性） */
+                ">
+                        <pre><code>@inproceedings{liu2025Transition,
+                title={Transition Strategy for Unmanned Aerial-Aquatic Vehicles(UAAVs): A Survey},
+                author={Kun, Liu and Junhao, Xiao and Hui, Peng and Yizhou, Zhang and Shiyou Zhao and Huimin Lu and Kaihong, Huang},
+                journal={Journal of Field Robotics},
+                volume={},
+                number={},
+                pages={},
+                year={2025},
+                publisher={Wiley Online Library}
+                url={}}</code></pre>
+              </div>
+            </div>
+
             <!-- 分类切换标签 -->
             <nav class="category-bar" aria-label="categories">
                 <button class="category-btn active" data-category="all">All</button>
                 <button class="category-btn" data-category="dolphin_inspired_robots">dolphin-inspired robots</button>
-                <button class="category-btn" data-category="squid_like_aavs">squid like aavs</button>
+                <button class="category-btn" data-category="squid_like_aavs">squid-like aavs</button>
                 <button class="category-btn" data-category="hopping_robots">hopping robots</button>
-                <button class="category-btn" data-category="flapping_wing_aavs">flapping wing aavs</button>
-                <button class="category-btn" data-category="folding_wing_aavs">folding wing aavs</button>
-                <button class="category-btn" data-category="multirotor_based_aavs">multirotor based aavs</button>
-                <button class="category-btn" data-category="fixed_wing_aavs">fixed wing aavs</button>
+                <button class="category-btn" data-category="flapping_wing_aavs">flapping-wing aavs</button>
+                <button class="category-btn" data-category="folding_wing_aavs">folding-wing aavs</button>
+                <button class="category-btn" data-category="multirotor_based_aavs">multirotor-based aavs</button>
+                <button class="category-btn" data-category="fixed_wing_aavs">fixed-wing aavs</button>
                 <button class="category-btn" data-category="hybrid_aavs">hybrid aavs</button>
             </nav>
             
@@ -1892,7 +1919,7 @@
             <section class="category-section mb-16" id="squid_like_aavs">
               <h3 class="text-2xl font-bold mb-6 flex items-center">
                 <i class="fa-solid fa-water" aria-hidden="true"></i>
-                squid like aavs
+                squid-like aavs
               </h3>
 
               <div class="ui vertical segment">
@@ -2112,7 +2139,7 @@
             <section class="category-section mb-16" id="flapping_wing_aavs">
               <h3 class="text-2xl font-bold mb-6 flex items-center">
                 <i class="fa-solid fa-feather" aria-hidden="true"></i>
-                flapping wing aavs
+                flapping-wing aavs
               </h3>
 
               <div class="ui vertical segment">
@@ -2174,7 +2201,7 @@
             <section class="category-section mb-16" id="folding_wing_aavs">
               <h3 class="text-2xl font-bold mb-6 flex items-center">
                 <i class="fa-solid fa-wind" aria-hidden="true"></i>
-                folding wing aavs
+                folding-wing aavs
               </h3>
 
               <div class="ui vertical segment">
@@ -2404,7 +2431,7 @@
             <section class="category-section mb-16" id="multirotor_based_aavs">
               <h3 class="text-2xl font-bold mb-6 flex items-center">
                 <i class="fa-solid fa-sun" aria-hidden="true"></i>
-                multirotor based aavs
+                multirotor-based aavs
               </h3>
 
               <div class="ui vertical segment">
@@ -2826,7 +2853,7 @@
             <section class="category-section mb-16" id="fixed_wing_aavs">
               <h3 class="text-2xl font-bold mb-6 flex items-center">
                 <i class="fa fa-plane text-primary mr-3"></i>
-                fixed wing aavs
+                fixed-wing aavs
               </h3>
 
               <div class="ui vertical segment">
